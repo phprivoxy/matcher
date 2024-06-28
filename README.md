@@ -41,7 +41,7 @@ $matcher->match('*/cat/page.*');    // TRUE
 Any samples you also may find at "tests" directory.
 
 
-### ### Does URI match the patterns 
+### Does URI match the patterns 
 
 ```php
 $patterns = [
