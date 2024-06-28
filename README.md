@@ -55,14 +55,14 @@ $patterns = [
 
 $matcher = new PHPrivoxy\Matcher\PatternsMatcher($patterns);
 $matcher->match('https://www.яндекс.рф/'); // FALSE
-$matcher->match('https://www.яндекс.рф/search.html'); // TRUE
-$matcher->match('https://www.linuxmint.com/'); // TRUE
+$matcher->match('https://www.яндекс.рф/search.html');    // TRUE
+$matcher->match('https://www.linuxmint.com/');           // TRUE
 $matcher->match('https://www.microsoft.com/other/linux-vs-windows/'); // FALSE
 $matcher->match('https://www.github.com/windows'); // FALSE
-$matcher->match('https://github.com/os2'); // TRUE
-$matcher->match('https://linux.github.com/'); // TRUE
+$matcher->match('https://github.com/os2');               // TRUE
+$matcher->match('https://linux.github.com/');            // TRUE
 $matcher->match('https://www.microsoft.com/office'); // FALSE
-$matcher->match('https://microsoft.com/office2024'); // TRUE
+$matcher->match('https://microsoft.com/office2024');     // TRUE
 $matcher->match('http://left.site/not-exist.html'); // FALSE
 ```
 
